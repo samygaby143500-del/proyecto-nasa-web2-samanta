@@ -1,0 +1,88 @@
+/* NAV GENERAL */
+.contenedor-nav{
+    width: 100%;
+}
+
+/* BARRA BUSCADOR */
+.caja-buscador{
+    background-color: #2b2b2b;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d-flex{
+    display: flex;
+    gap: 10px;
+}
+
+.espacio-buscador{
+    width: 280px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-buscar{
+    background: #0B3D91;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+/* BARRA INFERIOR */
+.contenedor{
+    background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+/* LOGO + NASA */
+.titulo-nasa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo-nasa{
+    width: 45px;
+}
+
+/* LISTA CENTRADA */
+.lista{
+    list-style: none;
+
+    display: flex;
+    gap: 40px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lista a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.lista a:hover{
+    color: #5ba7ff;
+}
