@@ -1,29 +1,27 @@
 <nav class="contenedor-nav">
-
-    <!-- BARRA SUPERIOR (BUSCADOR) -->
-    <div class="caja-buscador">
-        <form class="buscador">
-           <input type="text" class="espacio-buscador" placeholder="Search">
-           <button type="submit" class="btn-buscar">
-             <span class="material-symbols-outlined">search</span>
-           </button>
-        </form>
-    </div>
-
     <!-- BARRA INFERIOR -->
     <div class="contenedor">
 
         <a class="titulo-nasa">
-            <img src="imagenLogo" class="logo-nasa" alt="NASA">
-            NASA
+            <img [src] = "imagenLogo" class="logo-nasa" alt="NASA">
         </a>
 
         <ul class="lista">
             <li><a href="#">Eventos</a></li>
             <li><a href="#">Multimedia</a></li>
             <li><a href="#">NASA TV</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
+    </div>
 
+    <!-- BARRA SUPERIOR (BUSCADOR) -->
+     <div class="caja-buscador">
+        <form class="buscador">
+           <input type="text" class="espacio-buscador" placeholder="Search">
+           <button type="submit" class="btn-buscar">
+             <span class="material-symbols-outlined">search</span>
+           </button>
+        </form>
     </div>
 
 </nav>

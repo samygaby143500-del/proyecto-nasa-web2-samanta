@@ -2,6 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
+/*import { RouterLink } from '@angular/router';*/
+import { HostListener } from '@angular/core';
+
+
+
+@HostListener('window:scroll', [])
 
 
 @Component({
@@ -12,5 +18,8 @@ import { Footer } from './components/footer/footer';
   styleUrl: './app.css'
 })
 export class App {
- 
+  isScrolled = false;
+  onScroll() {
+  this.isScrolled = window.scrollY > 50;
+}
 }
