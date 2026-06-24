@@ -1,0 +1,116 @@
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
+
+  min-height: 70vh;
+  color: white;
+
+  /* imagen de fondo */
+  background: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('https://assets.science.nasa.gov/dynamicimage/assets/science/cds/ciencia/sistema-solar/2026/art002e012632~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* INFO */
+.info {
+  max-width: 380px;
+  position: relative;
+  z-index: 2;
+}
+
+.info h2 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(72, 72, 72, 0.2);
+}
+
+.info p {
+  color: #cbd5e1;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.datos p {
+  margin-top: 10px;
+  color: #9ea7b5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* FORMULARIO */
+.formulario {
+  background: rgba(28, 30, 33, 0.332);
+  padding: 25px;
+  border-radius: 5px;
+  width: 320px;
+ 
+  border: 1px solid rgba(206, 237, 252, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.formulario h3 {
+  color: #a0a0a0;
+  margin-bottom: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(49, 50, 50, 0.08);
+  border-radius: 5px;
+  background: rgba(67, 67, 67, 0.686);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+   background: rgba(59, 59, 59, 0.686);
+  box-shadow: 0 0 10px #00000026;
+}
+
+/* BOTÓN */
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #1B4D91);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0b1020;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  transition: 0.3s;
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  
+}
+
+/* ICONOS */
+.material-icons {
+  font-size: 20px;
+  color: #1B4D91;
+}

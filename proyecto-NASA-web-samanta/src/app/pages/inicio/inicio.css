@@ -1,25 +1,30 @@
-.inicio {
-  min-height: calc(100vh - 150px);
 
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),
-     /**/url('https://services.meteored.com/img/article/conoce-a-los-4-astronautas-que-viajaran-a-la-luna-en-2026-con-la-mision-artemis-ii-de-la-nasa-1759956584415_1280.jpg');
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
+
+  min-height: 70vh;
+  color: white;
+
+  /* imagen de fondo */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.847), rgba(0, 0, 0, 0.847)),
+    url('https://services.meteored.com/img/article/conoce-a-los-4-astronautas-que-viajaran-a-la-luna-en-2026-con-la-mision-artemis-ii-de-la-nasa-1759956584415_1280.jpg');
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.espacio-divisor{
-    background-color: #d1d5db;
-    height: 20px;
-}
+
+
+
+
 .hero {
   text-align: center;
   color: white;
@@ -50,4 +55,250 @@
 .hero button:hover{
     background-color: #ffffff9b;
     color: rgba(0, 0, 0, 0.624);
+}
+
+
+/* sección completa */
+.misiones{
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column; /* 👈 clave: arriba-abajo */
+    gap: 50px;
+    background-color: black;
+}
+
+/* contenido del título arriba */
+.contenido{
+    width: 100%;
+    max-width: 800px;
+    color: white;
+}
+
+.subtitulo{
+    color: #4db8ff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.contenido h2{
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.contenido p{
+    color: #d0d0d0;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* cards abajo */
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 👈 4 cards en una fila */
+    gap: 25px;
+}
+
+/* card */
+.card{
+    height: 420px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+}
+
+.card:hover{
+    transform: translateY(-12px) scale(1.02);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.info{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+}
+
+.info h3{
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+}
+
+.info p{
+    font-size: 0.95rem;
+    opacity: .9;
+}
+
+.nasa{
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.nasa-overlay{
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.15),
+    rgba(0,0,0,.95)
+  );
+}
+
+.nasa-content{
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.nasa-content h1{
+  font-size: 3rem;
+  margin: 15px 0 30px;
+}
+
+.nasa-img{
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(106, 106, 106, 0.681);
+}
+
+.fecha{
+  color: #4db8ff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.descripcion{
+  max-width: 800px;
+  margin: auto;
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4db8ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.btn:hover{
+  background: white;
+}
+
+
+/**/
+.hero-nasa{
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  color: white;
+
+  background-image: url('https://actualidadaeroespacial.com/wp-content/uploads/2025/05/La-estacion-espacial-Haven-1-supera-pruebas-criticas-de-habitabilidad-con-apoyo-de-la-Nasa-290525.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* oscurecer fondo */
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content{
+  position: relative;
+  max-width: 900px;
+  text-align: left;
+  padding: 40px;
+}
+
+.subtitulo{
+  color: #4db8ff;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero-content h1{
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.descripcion{
+  font-size: 1.2rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+  justify-content: left;
+  max-width: 600px;
+}
+
+/* botones */
+.botones{
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn{
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.secundario{
+  border: none;
+  color: white;
+}
+
+.secundario:hover{
+  background: white;
+  color: black;
 }

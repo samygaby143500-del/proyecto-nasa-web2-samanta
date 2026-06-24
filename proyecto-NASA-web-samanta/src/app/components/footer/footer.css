@@ -1,8 +1,9 @@
 .footer{
-    background: #111;
+    background: #000000;
     padding: 40px 20px;
     text-align: center;
     color: white;
+    border-top: 1px solid rgba(72, 72, 72, 0.464)
 }
 
 /* ICONOS */
@@ -28,7 +29,7 @@
 }
 
 .footer-icons a:hover{
-    background: #ffffffaa;
+    background: #ffffff4d;
     color: white;
     transform: translateY(-3px);
 }

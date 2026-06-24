@@ -1,14 +1,86 @@
-<section>
-    
-</section>
+
+
 <section class="inicio">
   <div class="hero">
     <h1>Explora el Universo</h1>
     <p>
       NASA
-Brand
-Guidelines
+      Brand
+      Guidelines
     </p>
-    <button>Comenzar</button>
+  
   </div>
+</section>
+
+
+
+<section class="misiones">
+
+  <div class="contenido">
+    <span class="subtitulo">EXPLORE EL UNIVERSO</span>
+    <h2>Misiones Espaciales</h2>
+
+    <p>
+      Descubre los proyectos más importantes de la NASA.
+    </p>
+
+  </div>
+
+  <div class="cards">
+    <div class="card" *ngFor="let mision of misiones">
+      <img [src]="mision.imagen" [alt]="mision.nombre">
+
+      <div class="info">
+        <h3>{{ mision.nombre }}</h3>
+        <p>{{ mision.descripcion }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="nasa">
+
+  <div class="nasa-overlay"></div>
+
+  <div class="nasa-content">
+
+    <span class="subtitulo">NASA • IMAGE OF THE DAY</span>
+
+    <h1>Imagen del Día</h1>
+
+    <img
+      class="nasa-img"
+      src="https://www.nasa.gov/wp-content/uploads/2026/06/art002e024603orig.jpg?resize=1200,800"
+      alt="Imagen del día NASA">
+
+    <p class="fecha">24 / 06 / 2026</p>
+    <p class="descripcion">
+      La NASA ha publicado una nueva imagen del día, mostrando un paisaje
+      impresionante del espacio exterior y la belleza del universo.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="hero-nasa">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="subtitulo">NASA • EXPLORACIÓN ESPACIAL</span>
+
+    <h1>Exploramos lo desconocido</h1>
+
+    <div class="botones">
+      <a routerLink="/nosotros" class="btn secundario">Más información</a>
+    </div>
+
+  </div>
+
 </section>

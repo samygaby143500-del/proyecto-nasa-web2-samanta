@@ -2,7 +2,7 @@
     <!-- BARRA INFERIOR -->
     <div class="contenedor">
 
-        <a class="titulo-nasa">
+        <a class="titulo-nasa" routerLink = "/">
             <img [src] = "imagenLogo" class="logo-nasa" alt="NASA">
         </a>
 
@@ -10,18 +10,17 @@
             <li><a href="#">Eventos</a></li>
             <li><a href="#">Multimedia</a></li>
             <li><a href="#">NASA TV</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a routerLink="/contacto">Contacto</a></li>
+            <li><a routerLink="/nosotros" >Nosotros</a></li>
+            
         </ul>
     </div>
 
     <!-- BARRA SUPERIOR (BUSCADOR) -->
-     <div class="caja-buscador">
-        <form class="buscador">
-           <input type="text" class="espacio-buscador" placeholder="Search">
-           <button type="submit" class="btn-buscar">
-             <span class="material-symbols-outlined">search</span>
-           </button>
-        </form>
+    <div class="caja-buscador">
+       <form class="buscador"> 
+        <input type="text" class="espacio-buscador" placeholder="Search"> 
+        <button type="submit" class="btn-buscar"> <span class="material-symbols-outlined">search</span> </button> 
+      </form> 
     </div>
-
 </nav>

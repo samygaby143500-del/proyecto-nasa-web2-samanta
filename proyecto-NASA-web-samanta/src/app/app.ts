@@ -6,10 +6,6 @@ import { Footer } from './components/footer/footer';
 import { HostListener } from '@angular/core';
 
 
-
-@HostListener('window:scroll', [])
-
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,8 +14,5 @@ import { HostListener } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  isScrolled = false;
-  onScroll() {
-  this.isScrolled = window.scrollY > 50;
-}
+
 }
