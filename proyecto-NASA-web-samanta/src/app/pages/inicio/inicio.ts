@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router'
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [CommonModule, ProyectoCard, RouterLink],
+  imports: [CommonModule, RouterLink],
   templateUrl: './inicio.html',
   styleUrl: './inicio.css',
 })

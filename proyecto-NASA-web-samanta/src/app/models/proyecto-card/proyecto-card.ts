@@ -11,6 +11,11 @@ export interface Mision {
   imagen: string;
 }
 
+export interface Producto {
+  nombre: string;
+  imagen: string;
+}
+
 
 @Component({
   selector: 'app-proyecto-card',

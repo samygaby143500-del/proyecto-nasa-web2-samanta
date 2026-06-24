@@ -1,1 +1,7 @@
-<p>productos works!</p>
+<h2>Cohetes</h2>
+<div class="grid">
+  <app-proyecto-card
+    *ngFor="let producto of productos"
+    [producto]="producto">
+  </app-proyecto-card>
+</div>

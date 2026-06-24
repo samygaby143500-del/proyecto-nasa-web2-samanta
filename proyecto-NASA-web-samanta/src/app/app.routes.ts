@@ -4,6 +4,7 @@ import { Nosotros } from './pages/nosotros/nosotros';
 import { Contacto } from './pages/contacto/contacto';
 import { Footer} from './components/footer/footer';
 import { NotFound } from './pages/not-found/not-found';
+import { Productos } from './pages/productos/productos';
 
 
 export const routes: Routes = [
@@ -22,6 +23,10 @@ export const routes: Routes = [
   {
     path: 'footer',
     component: Footer
+  },
+  {
+    path: 'producto',
+    component: Productos
   },
   {
   path: '**',

@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 100px;
+  padding: 40px;
+  background-color: black;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.h2{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    color: white;
+}

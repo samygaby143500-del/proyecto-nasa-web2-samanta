@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,  Input} from '@angular/core';
+import { Producto } from '../../models/proyecto-card/proyecto-card';
+
 
 @Component({
   selector: 'app-proyecto-card',
@@ -6,4 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './proyecto-card.html',
   styleUrl: './proyecto-card.css',
 })
-export class ProyectoCard {}
+export class ProyectoCard {
+  @Input() producto: any;
+}

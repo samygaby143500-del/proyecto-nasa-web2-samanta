@@ -13,7 +13,7 @@
 
   /* imagen de fondo */
   background: 
-    linear-gradient(rgba(0, 0, 0, 0.847), rgba(0, 0, 0, 0.847)),
+    linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.671)),
     url('https://services.meteored.com/img/article/conoce-a-los-4-astronautas-que-viajaran-a-la-luna-en-2026-con-la-mision-artemis-ii-de-la-nasa-1759956584415_1280.jpg');
 
   background-size: cover;
