@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule} from '@angular/common'
 
 
@@ -12,8 +12,10 @@ export interface Mision {
 }
 
 export interface Producto {
+  id: number;
   nombre: string;
   imagen: string;
+ 
 }
 
 

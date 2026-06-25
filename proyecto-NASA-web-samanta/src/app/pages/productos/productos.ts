@@ -19,17 +19,51 @@ export class Productos {
 
     productos: Producto[] = [
     {
+      id: 1,
       nombre: 'Artemis I',
-      imagen: 'https://tse1.mm.bing.net/th/id/OIP.MnLBIvIMec8LrIGyydkpmwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'
+      imagen: 'https://tse1.mm.bing.net/th/id/OIP.MnLBIvIMec8LrIGyydkpmwHaEK'
     },
     {
+      id: 2,
       nombre: 'SLS',
       imagen: 'https://c.files.bbci.co.uk/156F2/production/_110449778_mediaitem110449777.jpg'
     },
     {
+      id: 3,
+      nombre: 'Artemis II',
+      imagen: 'https://encolombia.com/wp-content/uploads/2022/12/Artemis-I-cohete-de-la-nasa.jpg'
+    },
+    {
+      id: 4,
+      nombre: 'Artemis I',
+      imagen: 'https://tse1.mm.bing.net/th/id/OIP.MnLBIvIMec8LrIGyydkpmwHaEK'
+    },
+    {
+      id: 5,
+      nombre: 'SLS',
+      imagen: 'https://c.files.bbci.co.uk/156F2/production/_110449778_mediaitem110449777.jpg'
+    },
+    {
+      id: 6,
       nombre: 'Artemis II',
       imagen: 'https://encolombia.com/wp-content/uploads/2022/12/Artemis-I-cohete-de-la-nasa.jpg'
     }
   ];
 
+  favoritos: Producto[] = [];
+
+  toggleFavorito(producto: Producto) {
+
+    const existe = this.favoritos.some(f => f.id === producto.id);
+
+    if (existe) {
+      this.favoritos = this.favoritos.filter(f => f.id !== producto.id);
+    } else {
+      this.favoritos.push(producto);
+    }
+  }
+
+  esFavorito(producto: Producto): boolean {
+    return this.favoritos.some(f => f.id === producto.id);
+  }
 }

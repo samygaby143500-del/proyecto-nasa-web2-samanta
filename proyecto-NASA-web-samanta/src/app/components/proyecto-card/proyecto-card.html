@@ -1,9 +1,13 @@
+
+
 <div class="card">
+
   <img [src]="producto.imagen" [alt]="producto.nombre">
 
-  <div class="overlay"></div>
+  <h3>{{ producto.nombre }}</h3>
 
-  <div class="content">
-    <h3>{{ producto.nombre }}</h3>
-  </div>
+  <button (click)="toggle()">
+    {{ esFavorito ? 'Quitar' : '⭐' }}
+  </button>
+
 </div>

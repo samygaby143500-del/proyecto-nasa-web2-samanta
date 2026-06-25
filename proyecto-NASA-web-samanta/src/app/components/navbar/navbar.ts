@@ -11,6 +11,6 @@ import { RouterLink } from '@angular/router';
 })
 export class Navbar {
   imagenLogo = "assets/img/logo-nasa.png";
-
+busqueda: string = '';
 
 }
