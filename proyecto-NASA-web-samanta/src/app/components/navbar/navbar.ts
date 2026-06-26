@@ -13,4 +13,5 @@ export class Navbar {
   imagenLogo = "assets/img/logo-nasa.png";
 busqueda: string = '';
 
+
 }

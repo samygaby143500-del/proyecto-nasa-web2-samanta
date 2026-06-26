@@ -5,6 +5,7 @@ import { Contacto } from './pages/contacto/contacto';
 import { Footer} from './components/footer/footer';
 import { NotFound } from './pages/not-found/not-found';
 import { Productos } from './pages/productos/productos';
+import { Eventos } from './pages/eventos/eventos';
 
 
 export const routes: Routes = [
@@ -27,6 +28,10 @@ export const routes: Routes = [
   {
     path: 'producto',
     component: Productos
+  },
+  {
+    path: 'eventos',
+    component: Eventos
   },
   {
   path: '**',

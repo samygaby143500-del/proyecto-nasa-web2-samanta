@@ -1,13 +1,17 @@
-
-
 <div class="card">
 
-  <img [src]="producto.imagen" [alt]="producto.nombre">
+  <img
+    [src]="producto.imagen"
+    [alt]="producto.nombre"
+    class="card-img"
+  >
 
-  <h3>{{ producto.nombre }}</h3>
+  <div class="card-content">
+    <h3>{{ producto.nombre }}</h3>
 
-  <button (click)="toggle()">
-    {{ esFavorito ? 'Quitar' : '⭐' }}
-  </button>
+    <button class="favorite-btn" (click)="toggle()">
+      {{ esFavorito ? '★' : '☆' }}
+    </button>
+  </div>
 
 </div>

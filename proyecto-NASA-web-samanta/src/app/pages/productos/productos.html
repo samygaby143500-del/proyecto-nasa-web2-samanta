@@ -10,25 +10,59 @@
   }
 </div>
 
+<h2>Tierra</h2>
+
+<div class="grid">
+  @for (producto of tierra; track producto.id) {
+    <app-proyecto-card
+      [producto]="producto"
+      [esFavorito]="esFavorito(producto)"
+      (toggleFavorito)="toggleFavorito($event)">
+    </app-proyecto-card>
+  }
+</div>
+
+
+<h2>Universo</h2>
+
+<div class="grid">
+  @for (producto of universo; track producto.id) {
+    <app-proyecto-card
+      [producto]="producto"
+      [esFavorito]="esFavorito(producto)"
+      (toggleFavorito)="toggleFavorito($event)">
+    </app-proyecto-card>
+  }
+</div>
+
+<hr>
+
 <h2>Favoritos</h2>
 
 @if (favoritos.length > 0) {
 
-  <div class="grid">
-    @for (fav of favoritos; track fav.id) {
-      <div class="card">
-        <img [src]="fav.imagen">
-        <h3>{{ fav.nombre }}</h3>
+<div class="grid">
 
-        <button (click)="toggleFavorito(fav)">
-          Quitar
-        </button>
-      </div>
-    }
-  </div>
+  @for (fav of favoritos; track fav.id) {
+
+    <div class="favorite-card">
+
+      <img [src]="fav.imagen" [alt]="fav.nombre">
+
+      <h3>{{ fav.nombre }}</h3>
+
+      <button (click)="toggleFavorito(fav)">
+        Quitar
+      </button>
+
+    </div>
+
+  }
+
+</div>
 
 } @else {
 
-  <p>No tienes favoritos aún</p>
+<p>No tienes favoritos aún</p>
 
 }
