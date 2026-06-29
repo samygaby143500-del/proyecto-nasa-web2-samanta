@@ -99,4 +99,24 @@ export class Productos {
   esFavorito(producto: Producto): boolean {
     return this.favoritos.some(f => f.id === producto.id);
   }
+
+  busqueda: string = '';
+
+  get productosFiltrados(): Producto[] {
+  return this.productos.filter(p =>
+    p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
+  );
+}
+
+get tierraFiltrada(): Producto[] {
+  return this.tierra.filter(p =>
+    p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
+  );
+}
+
+get universoFiltrado(): Producto[] {
+  return this.universo.filter(p =>
+    p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
+  );
+}
 }

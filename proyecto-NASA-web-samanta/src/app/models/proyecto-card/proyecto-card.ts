@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule} from '@angular/common'
-
-
+import { NgModule } from '@angular/core';
 
 // noticia.model.ts
 
@@ -16,6 +15,14 @@ export interface Producto {
   nombre: string;
   imagen: string;
  
+}
+
+export interface Programa {
+
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+
 }
 
 

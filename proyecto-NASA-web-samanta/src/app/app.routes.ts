@@ -6,6 +6,7 @@ import { Footer} from './components/footer/footer';
 import { NotFound } from './pages/not-found/not-found';
 import { Productos } from './pages/productos/productos';
 import { Eventos } from './pages/eventos/eventos';
+import { NasaTv } from './pages/nasa-tv/nasa-tv';
 
 
 export const routes: Routes = [
@@ -34,7 +35,11 @@ export const routes: Routes = [
     component: Eventos
   },
   {
-  path: '**',
-  component: NotFound
+    path: 'nasa-tv',
+    component: NasaTv
+  },
+  {
+    path: '**',
+    component: NotFound
   }
 ];
