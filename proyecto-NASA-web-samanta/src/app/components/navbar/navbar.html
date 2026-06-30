@@ -4,48 +4,38 @@
 
     <!-- Logo -->
     <a class="navbar-brand titulo-nasa d-flex align-items-center" routerLink="/">
-      <img
-        [src]="imagenLogo"
-        class="logo-nasa"
-        alt="Logo NASA"
-      >
+      <img [src]="imagenLogo" class="logo-nasa" alt="Logo NASA">
     </a>
 
-    <!-- Botón Responsive -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#menuNavbar"
-    >
+    <!-- Botón Para cuando la pantalla es chica-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Menú -->
     <div class="collapse navbar-collapse justify-content-center" id="menuNavbar">
-
       <ul class="navbar-nav mx-auto">
-
+        <!-- opcion de inicio -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/">Inicio</a>
         </li>
-
+        <!-- opcion de eventos -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/eventos">Eventos</a>
         </li>
-
+        <!-- opcion de multimedia -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/producto">
             Multimedia
           </a>
         </li>
-
+        <!-- opcion de contacto -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/contacto">
             Contacto
           </a>
         </li>
-
+        <!-- opcion de NASA TV -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/nasa-tv">
             NASA TV
@@ -54,7 +44,7 @@
 
       </ul>
 
-      <!-- Buscador 
+      <!-- Buscador --
       <form class="d-flex buscador">
 
       <input

@@ -10,7 +10,6 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-producto-card',
   imports: [FormsModule, CommonModule, ProyectoCard
-
   ],
   templateUrl: './productos.html',
   styleUrl: './productos.css',
@@ -96,7 +95,7 @@ export class Productos {
     }
   }
 
-  esFavorito(producto: Producto): boolean {
+  esFavorito(producto: Producto): boolean {// viene de lo que le diga el hijo, para el diseño de la estrella
     return this.favoritos.some(f => f.id === producto.id);
   }
 
@@ -106,17 +105,17 @@ export class Productos {
   return this.productos.filter(p =>
     p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
   );
-}
+  }
 
-get tierraFiltrada(): Producto[] {
+  get tierraFiltrada(): Producto[] {
   return this.tierra.filter(p =>
     p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
   );
-}
+  }
 
-get universoFiltrado(): Producto[] {
+  get universoFiltrado(): Producto[] {
   return this.universo.filter(p =>
     p.nombre.toLowerCase().includes(this.busqueda.toLowerCase())
   );
-}
+  }
 }
